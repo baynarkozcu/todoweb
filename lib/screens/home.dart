@@ -25,11 +25,7 @@ class _MyHomePageState extends State<MyHomePage> {
               padding: EdgeInsets.only(left: 25), child: Icon(Icons.menu)),
           actions: [
             Padding(
-              padding: EdgeInsets.only(right: 25),
-              child: Icon(
-                Icons.search,
-              ),
-            )
+                padding: EdgeInsets.only(right: 25), child: Icon(Icons.search ))
           ],
         ),
         body: ListView(
@@ -115,7 +111,9 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             _todos.length != 0
-                ? TodoList(todosList: _todos,)
+                ? TodoList(
+                    todosList: _todos,
+                  )
                 : Center(
                     child: Padding(
                       padding: const EdgeInsets.only(top: 100),
