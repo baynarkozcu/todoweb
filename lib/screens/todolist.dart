@@ -1,8 +1,6 @@
 
-
 import 'package:flutter/material.dart';
 import 'package:todo_web/models/todo.dart';
-import 'package:todo_web/screens/todocard.dart';
 
 class TodoList extends StatefulWidget {
 
