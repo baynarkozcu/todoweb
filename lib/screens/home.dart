@@ -86,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             Padding(
                               padding: const EdgeInsets.only(right: 100),
                               child: RaisedButton(
-                                child: Text("Kaydet"),
+                                child: Text("Ok"),
                                 color: Colors.blue,
                                 onPressed: () {
                                   setState(() {
