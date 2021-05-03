@@ -7,8 +7,9 @@ class CustomTextField extends StatelessWidget {
   final int length;
   final TextInputType type;
 
-
-  const CustomTextField({Key key, this.controller, this.text, this.lines, this.type, this.length}) : super(key: key);
+  const CustomTextField(
+      {Key key, this.controller, this.text, this.lines, this.type, this.length})
+      : super(key: key);
   @override
   Widget build(BuildContext context) {
     return TextField(
@@ -17,6 +18,8 @@ class CustomTextField extends StatelessWidget {
       controller: controller,
       keyboardType: type,
       decoration: InputDecoration(
+          filled: true,
+          fillColor: Colors.white,
           hintText: text,
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(10))),
     );
